@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>uhh...</title>
+
+<style>
+body{
+  background:white;
+  color:black;
+  font-family:monospace;
+  font-size:22px;
+  padding:40px;
+  line-height:1.6;
+}
+</style>
+
+</head>
+<body>
+
+<div id="text"></div>
+
+<script>
+var message = `uhhhhh hmmm this is weird huh? 
+
+Just took you here?….To a random white page…
+
+Uhh alright um we can fix this yeah…
+
+Mhm yeah okay, just head to https://nmpersonal00/ ……
+
+Erm seems like Nareen is only letting me give you part of the link..uhhh how about you sweeten her up a bit maybe she’ll just give it to you!!!!
+
+If that doesn’t work…I don’t even know! I’m just a white page leave me alonnnnee!`;
+
+var i = 0;
+var speed = 45;
+
+function typeWriter(){
+  if(i < message.length){
+    document.getElementById("text").innerHTML += message.charAt(i) === "\n" ? "<br>" : message.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter();
+</script>
+
+</body>
+</html>
